@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>モックアップ</title>
+</head>
+<style>
+.result-popup {
+  display: none;
+}
+
+</style>
+<body>
+  <h1>テスト</h1>
+  <div id="test">test</div>
+  <button id="add">カートに入れる</button>
+  <button id="order">注文する</button>
+  <button id="fav">お気に入りに入れる</button>
+  <button id="search">商品を検索する</button>
+  <span id="product" value="123456789">商品１</span>
+  <span id="result" class="result-popup" value="123456789">結果</span>
+  <span id="errorResult" class="result-popup" value="123456789">エラー結果</span>
+  <form action="/test" method="post">
+    <input type="file" name="testfile" id="">
+    <button id="submit-btn">ごー</button>
+  </form>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/common.js"></script>
+<script>
+  $('#submit-btn').on('click',function(){
+    console.log('test')
+    alert('test')
+    debugger
+  })
+
+</script>
+</html>

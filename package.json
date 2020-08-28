@@ -1,0 +1,31 @@
+{
+  "name": "node-server",
+  "version": "1.0.0",
+  "description": "Node.js環境で動作する簡易サーバです。",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "serve": "tsc --watch & ts-node-dev src/backend/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mtgnk/node-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mtgnk/node-server/issues"
+  },
+  "homepage": "https://github.com/mtgnk/node-server#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.7",
+    "@types/jquery": "^1.10.34",
+    "ts-node": "^8.10.2",
+    "ts-node-dev": "^1.0.0-pre.57"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "typescript": "^3.9.7"
+  }
+}
