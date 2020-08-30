@@ -33,7 +33,7 @@ app.get('/error',(req,res)=>{
 
 app.post('/test',(req,res)=>{
   var param = {"値":"これはサンプルAPIです",id:Math.random(),"body":req.body};
-  console.log(req.body)
+  console.log(req)
   res.header('Content-Type', 'application/json; charset=utf-8')
   res.send(param);
 })

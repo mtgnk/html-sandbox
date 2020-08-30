@@ -31,7 +31,7 @@
                 //POSTであればcsrf値を入れる
                 //self.session = $('session')
                 //注文実行
-                self.postData({ test: "body" }).done(function (data) {
+                self.postData(self.content).done(function (data) {
                     //TODO 共通の正常系ハンドリング
                     if (data.statusCode != null) {
                         self.render();
